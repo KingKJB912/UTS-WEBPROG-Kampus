@@ -1,0 +1,169 @@
+/* Reset & dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #2f3542;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #dfe6e9;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #57606f;
+}
+
+/* Konten utama */
+.content {
+    padding: 30px;
+    flex-grow: 1;
+    background-color: #ffffff;
+}
+
+/* Judul */
+h2 {
+    color: #2f3542;
+    margin-bottom: 20px;
+}
+
+/* Box wrapper */
+.box {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* Form input baris */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px 8px 15px 0;
+}
+
+/* Tombol */
+button, .btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2980b9;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #1e6fa3;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+td a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a[href*="edit"] {
+    color: #2980b9;
+}
+
+td a[href*="hapus"], td a[href*="delete"] {
+    color: red;
+}
+
+/* Tombol Kembali */
+a.back-link {
+    display: inline-block;
+    margin-top: 25px;
+    background-color: #636e72;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a.back-link:hover {
+    background-color: #2d3436;
+}
+
+/* Responsive form */
+@media (max-width: 768px) {
+    .form-row {
+        display: block;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dashboard-menu {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
